@@ -1,0 +1,123 @@
+@import "../variables/variables";
+
+@media screen and (min-width: 320px) {
+  #firstMember{
+    .memberPhoto{
+      background: url("../../images/chick.jpg")no-repeat center/cover;
+    }
+  }
+
+  #secondMember{
+    .memberPhoto{
+      background: url("../../images/pierce.jpg")no-repeat center/cover;
+    }
+  }
+
+  #thirMember{
+    .memberPhoto{
+      background: url("../../images/blondie.jpg")no-repeat center/cover;
+    }
+  }
+  .dot{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+
+
+  #teamSection{
+    height: 1300px; //800
+    width: 100%;
+    background: black;
+    #teamH{
+      margin: 0 auto;
+      padding-top: 40px;
+      width: 320px;
+      p:first-of-type{
+        font: $sans;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+      }
+      p:last-of-type{
+        font: $sans;
+        color: darkgray;
+        font-size: 0.75rem;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    #members{
+      .member{
+        p:first-of-type{
+          color: white;
+          font: $sans;
+          text-align: center;
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin: 15px 0 5px 0;
+        }
+        p:last-of-type{
+          color: grey;
+          font: $sans;
+          text-align: center;
+          font-size: 0.9rem;
+          margin: 5px 0 10px 0;
+          padding-bottom: 50px;
+        }
+      }
+      .memberPhoto {
+        color: white;
+        margin: 40px auto 0 auto;
+        padding-top: 40px;
+        width: 200px;
+        height: 200px;
+        border: 3px solid white;
+        border-radius: 100%;
+      }
+    }
+  }
+  #teamFooter{
+    color: grey;
+    font: $sans;
+    text-align: center;
+    margin: 40px 10px 0 10px;
+    font-size: 0.75rem;
+
+  }
+}
+
+
+@media screen and (min-width: 760px) {
+  #teamSection{
+    height: 800px;
+    #teamH{
+      padding-top: 100px;
+      padding-bottom: 50px;
+      width: 760px;
+      p:first-of-type{
+        font-size: 3rem;
+      }
+      p:last-of-type{
+        font-size: 1rem;
+      }
+    }
+    #members {
+      margin: 0 auto;
+      width: 760px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  #teamFooter{
+    width: 500px;
+    margin: 50px auto;
+    font-size: 1rem;
+  }
+}

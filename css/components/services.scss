@@ -1,0 +1,192 @@
+@import "../variables/variables";
+
+@media screen and (min-width: 320px) {
+  #devSection{
+    height: 200px;
+    width: 100%;
+  }
+  #brandSection{
+    height: 200px;
+    width: 100%;
+    background: $backgroundIdentity;
+  }
+  .text{
+    width: 80%;
+    margin: 0 30px;
+    p{
+      font: $sans;
+      font-size: 0.75rem;
+      margin-top: 25px;
+      text-align: justify;
+      color: darkgrey;
+    }
+    p:first-of-type{
+      font-size: 2rem;
+      padding-top: 10px;
+      color: black;
+    }
+  }
+  .pic{
+    display: none;
+  }
+  #services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    #text{
+      margin: 20px auto;
+      width: 300px;
+    }
+    #col{
+      margin: 20px auto;
+      width: 300px;
+    }
+    .serviceGen{
+      .circle{
+        margin: 30px auto;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .cont{
+        p:first-of-type{
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        p:last-of-type{
+          font-size: 0.75rem;
+          margin-top: 10px;
+          color: darkgray;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 760px) {
+  #devSection{
+    height: 440px;
+    .container{
+      display: flex;
+      flex-direction: row;
+      width: 760px;
+    }
+  }
+  #brandSection{
+    height: 440px;
+    .container{
+      display: flex;
+      flex-direction: row;
+      width: 760px;
+    }
+  }
+  .text{
+    margin: 100px 20px;
+    height: 240px;
+    width: 340px;
+  }
+  .pic{
+    display: block;
+    width: 340px;
+    margin: 100px 20px;
+    height: 240px;
+    img{
+      width: 200px;
+      height: 150px;
+      margin: 40px 80px 0 80px;
+    }
+  }
+  #services{
+    flex-direction: row;
+    width: 760px;
+    height: 790px;
+    margin: 0 auto;
+    #text{
+      margin: 100px 0;
+      width: 370px;
+    }
+    #col{
+      margin: 100px 0;
+      width: 380px;
+    }
+    .serviceGen{
+      height: 90px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      .circle{
+        margin: 20px auto;
+      }
+      .cont{
+        width: 270px;
+        margin: 0 20px;
+        p:first-of-type{
+          margin-top: 30px;
+        }
+        p:last-of-type{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  #devSection{
+    .container{
+      width: 940px;
+    }
+  }
+  #branSection{
+    .container{
+      width: 940px;
+    }
+  }
+  .text{
+    margin: 100px 40px;
+    width: 560px;
+  }
+  .pic{
+    width: 220px;
+    margin: 100px 40px;
+    img{
+      width: 200px;
+      height: 150px;
+      margin: 40px 10px 0 10px;
+    }
+  }
+
+
+  #services{
+    width: 940px;
+    #text{
+      width: 370px;
+      margin: 100px 40px;
+    }
+    #col{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 150px;
+      margin-right: 40px;
+      width: 370px;
+    }
+    .serviceGen{
+      .circle{
+        margin-top: 35px;
+      }
+      .cont{
+        width: 280px;
+        p:first-of-type{
+          margin-top: 40px;
+        }
+        p:last-of-type{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+
+}

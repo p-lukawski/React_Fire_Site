@@ -1,0 +1,841 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'arial', sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  #home {
+    width: 100vw;
+    height: 620px;
+    background: black;
+    font: "PT Sans", sans-serif;
+  }
+
+  #home #image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #home #image img {
+    margin-top: auto;
+    height: 25px;
+    width: 25px;
+  }
+
+  #home #image p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 5px;
+    margin-top: auto;
+  }
+
+  #home #header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  #home #header nav {
+    margin-top: 2vh;
+  }
+
+  #home #header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+  }
+
+  #home #header nav ul li {
+    margin: 0 auto;
+    font-size: 1.1Rem;
+    font-weight: 300;
+  }
+
+  #home #header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #bottom {
+    color: white;
+    width: 100%;
+    height: 529px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bottom p:first-of-type {
+    font-size: 0.9rem;
+  }
+
+  #bottom p:last-of-type {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 5vh;
+  }
+
+  #bottom button {
+    border-radius: 5%;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    border-color: white;
+    color: white;
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #home #header {
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  #home #header #image img {
+    margin-top: auto;
+  }
+
+  #home #header nav {
+    margin-top: 9vh;
+  }
+
+  #home #header nav ul {
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+
+  #home #header nav ul li {
+    margin-left: 20px;
+    font-size: 1.2Rem;
+  }
+
+  #home #bottom p:first-of-type {
+    font-size: 2rem;
+  }
+
+  #home #bottom p:last-of-type {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home #header {
+    width: 940px;
+    justify-content: space-between;
+  }
+
+  #home #header #image {
+    margin-left: 40px;
+  }
+
+  #home #header nav ul li {
+    margin-left: 20px;
+    font-size: 1.2Rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #devSection {
+    height: 200px;
+    width: 100%;
+  }
+
+  #brandSection {
+    height: 200px;
+    width: 100%;
+    background: #fafafa;
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 30px;
+  }
+
+  .text p {
+    font: "PT Sans", sans-serif;
+    font-size: 0.75rem;
+    margin-top: 25px;
+    text-align: justify;
+    color: darkgrey;
+  }
+
+  .text p:first-of-type {
+    font-size: 2rem;
+    padding-top: 10px;
+    color: black;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  #services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #services #text {
+    margin: 20px auto;
+    width: 300px;
+  }
+
+  #services #col {
+    margin: 20px auto;
+    width: 300px;
+  }
+
+  #services .serviceGen .circle {
+    margin: 30px auto;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #services .serviceGen .cont p:first-of-type {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #services .serviceGen .cont p:last-of-type {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    color: darkgray;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #devSection {
+    height: 440px;
+  }
+
+  #devSection .container {
+    display: flex;
+    flex-direction: row;
+    width: 760px;
+  }
+
+  #brandSection {
+    height: 440px;
+  }
+
+  #brandSection .container {
+    display: flex;
+    flex-direction: row;
+    width: 760px;
+  }
+
+  .text {
+    margin: 100px 20px;
+    height: 240px;
+    width: 340px;
+  }
+
+  .pic {
+    display: block;
+    width: 340px;
+    margin: 100px 20px;
+    height: 240px;
+  }
+
+  .pic img {
+    width: 200px;
+    height: 150px;
+    margin: 40px 80px 0 80px;
+  }
+
+  #services {
+    flex-direction: row;
+    width: 760px;
+    height: 790px;
+    margin: 0 auto;
+  }
+
+  #services #text {
+    margin: 100px 0;
+    width: 370px;
+  }
+
+  #services #col {
+    margin: 100px 0;
+    width: 380px;
+  }
+
+  #services .serviceGen {
+    height: 90px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #services .serviceGen .circle {
+    margin: 20px auto;
+  }
+
+  #services .serviceGen .cont {
+    width: 270px;
+    margin: 0 20px;
+  }
+
+  #services .serviceGen .cont p:first-of-type {
+    margin-top: 30px;
+  }
+
+  #services .serviceGen .cont p:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #devSection .container {
+    width: 940px;
+  }
+
+  #branSection .container {
+    width: 940px;
+  }
+
+  .text {
+    margin: 100px 40px;
+    width: 560px;
+  }
+
+  .pic {
+    width: 220px;
+    margin: 100px 40px;
+  }
+
+  .pic img {
+    width: 200px;
+    height: 150px;
+    margin: 40px 10px 0 10px;
+  }
+
+  #services {
+    width: 940px;
+  }
+
+  #services #text {
+    width: 370px;
+    margin: 100px 40px;
+  }
+
+  #services #col {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 40px;
+    width: 370px;
+  }
+
+  #services .serviceGen .circle {
+    margin-top: 35px;
+  }
+
+  #services .serviceGen .cont {
+    width: 280px;
+  }
+
+  #services .serviceGen .cont p:first-of-type {
+    margin-top: 40px;
+  }
+
+  #services .serviceGen .cont p:last-of-type {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #cSection {
+    height: 1050px;
+    background: #fafafa;
+  }
+
+  #cSection #clientsH {
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 320px;
+    text-align: center;
+  }
+
+  #cSection #clientsH p:first-of-type {
+    font: "PT Sans", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  #cSection #clientsH p:last-of-type {
+    font: "PT Sans", sans-serif;
+    color: darkgray;
+    font-size: 0.75rem;
+  }
+
+  #clientsBottom {
+    margin: 20px auto 0 auto;
+    width: 320px;
+  }
+
+  #clientsBottom .clientPhoto {
+    width: 110px;
+    height: 110px;
+    background-color: #F34A53;
+    border-radius: 100%;
+    margin: 5px auto;
+  }
+
+  #clientsBottom .says {
+    height: 140px;
+    width: 300px;
+    margin: 30px 10px;
+    background: white;
+  }
+
+  #clientsBottom .says p:first-of-type {
+    font-size: 1rem;
+    padding: 15px;
+    color: darkgray;
+  }
+
+  #clientsBottom .says p:last-of-type {
+    font-size: 0.75rem;
+    color: dodgerblue;
+    padding: 0 15px;
+  }
+
+  #logos {
+    width: 320px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logos img {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #cSection {
+    height: 970px;
+  }
+
+  #clientsBottom {
+    width: 760px;
+  }
+
+  #clientsBottom .clientPhoto {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  #clientsBottom #firstDude {
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #clientsBottom #secondDude {
+    display: flex;
+    flex-direction: row;
+    width: 760px;
+  }
+
+  #clientsBottom #secondDude .clientPhoto {
+    display: none;
+  }
+
+  #clientsBottom .says {
+    height: 150px;
+    width: 500px;
+    margin: 80px 10px;
+    background: white;
+  }
+
+  #logos {
+    width: 760px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #logos img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #cSection {
+    height: 970px;
+  }
+
+  #cSection #clientsH {
+    width: auto;
+  }
+
+  #cSection #clientsH p:first-of-type {
+    font-size: 3rem;
+  }
+
+  #cSection #clientsH p:last-of-type {
+    font-size: 1rem;
+  }
+
+  #clientsBottom {
+    width: 940px;
+  }
+
+  #clientsBottom .clientPhoto {
+    width: 220px;
+    height: 220px;
+    margin-top: 50px;
+  }
+
+  #clientsBottom #firstDude {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #clientsBottom #secondDude {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #clientsBottom .says {
+    height: 160px;
+    width: 630px;
+  }
+
+  #clientsBottom .says p:first-of-type {
+    font-size: 1.4rem;
+  }
+
+  #clientsBottom .says p:last-of-type {
+    font-size: 0.9rem;
+  }
+
+  #logos {
+    margin: 50px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #firstMember .memberPhoto {
+    background: url(/images/chick.jpg) no-repeat center/cover;
+  }
+
+  #secondMember .memberPhoto {
+    background: url(/images/pierce.jpg) no-repeat center/cover;
+  }
+
+  #thirMember .memberPhoto {
+    background: url(/images/blondie.jpg) no-repeat center/cover;
+  }
+
+  .dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+
+  #teamSection {
+    height: 1300px;
+    width: 100%;
+    background: black;
+  }
+
+  #teamSection #teamH {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 320px;
+  }
+
+  #teamSection #teamH p:first-of-type {
+    font: "PT Sans", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+
+  #teamSection #teamH p:last-of-type {
+    font: "PT Sans", sans-serif;
+    color: darkgray;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #teamSection #members .member p:first-of-type {
+    color: white;
+    font: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+  }
+
+  #teamSection #members .member p:last-of-type {
+    color: grey;
+    font: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 5px 0 10px 0;
+    padding-bottom: 50px;
+  }
+
+  #teamSection #members .memberPhoto {
+    color: white;
+    margin: 40px auto 0 auto;
+    padding-top: 40px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 100%;
+  }
+
+  #teamFooter {
+    color: grey;
+    font: "PT Sans", sans-serif;
+    text-align: center;
+    margin: 40px 10px 0 10px;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #teamSection {
+    height: 800px;
+  }
+
+  #teamSection #teamH {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 760px;
+  }
+
+  #teamSection #teamH p:first-of-type {
+    font-size: 3rem;
+  }
+
+  #teamSection #teamH p:last-of-type {
+    font-size: 1rem;
+  }
+
+  #teamSection #members {
+    margin: 0 auto;
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #teamFooter {
+    width: 500px;
+    margin: 50px auto;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #contactSection {
+    height: 1000px;
+    width: 100%;
+    background: #7690c5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contactSection #contacts {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contactSection #contacts #greetings p {
+    font: "PT Sans", sans-serif;
+    color: white;
+  }
+
+  #contactSection #contacts #greetings p:first-of-type {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+
+  #contactSection #contacts #greetings p:last-of-type {
+    font-size: 0.75rem;
+    margin-top: 25px;
+  }
+
+  #contactSection #contacts #points {
+    margin-top: 50px;
+  }
+
+  #contactSection #contacts #points #pointsFirstCol {
+    width: 180px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #contactSection #contacts #points #pointsSecCol {
+    width: 180px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #contactSection #contacts .point {
+    font: "PT Sans", sans-serif;
+    color: white;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  #contactSection #contacts .point p {
+    margin-top: 5px;
+  }
+
+  #contactSection #contacts .point .icon {
+    width: 50px;
+  }
+
+  #form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #form form input {
+    border: 0;
+    border-radius: 4%;
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+
+  #form form input:first-of-type {
+    margin-top: 50px;
+  }
+
+  #form form input:last-of-type {
+    height: 200px;
+    padding-bottom: 150px;
+  }
+
+  #lastFooter p {
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #contactSection {
+    height: 640px;
+  }
+
+  #contactSection #contact-row {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    width: 760px;
+    margin: 50px auto;
+  }
+
+  #contactSection #contacts {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  #contactSection #contacts #greetings p:first-of-type {
+    margin-top: 0;
+  }
+
+  #contactSection #contacts #greetings p:last-of-type {
+    margin-top: 25px;
+  }
+
+  #contactSection #contacts #points {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  #form form input {
+    margin: 0;
+  }
+
+  #form form input:first-of-type {
+    margin-top: 0;
+  }
+
+  #form form input:nth-of-type(2) {
+    margin-top: 20px;
+  }
+
+  #form form input:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 760px) and (min-width: 1200px) {
+  #contactSection #contact-row {
+    width: 960px;
+  }
+
+  #contactSection #contacts {
+    width: 470px;
+  }
+
+  #contactSection #contacts #points {
+    margin-top: 60px;
+  }
+
+  #contactSection #contacts #points .point {
+    margin: 20px 0;
+  }
+
+  #contactSection #contacts #points #pointsFirstCol {
+    margin-left: 0;
+  }
+
+  #form form {
+    height: 360px;
+    width: 450px;
+  }
+}
